@@ -2,22 +2,19 @@ function cambiarEstilos() {
     contenedor.classList.add("contenedor");
     loginForm.classList.add("loginForm", "Form");
     logos.classList.add("logos");
-    Facebook.id = "Facebook";
-    Twitter.id = "Twitter";
-    Forgot.classList.add("Forgot");
-    loginButtom.classList.add("login-buttom");
-    DescriptionForm.classList.add("Description","Form");
-
+    Facebook.innerHTML = "";
+    Twitter.innerHTML = "";
     logo.forEach((element) => {
         element.classList.add("logo");
     });
-
-    typing.forEach((item) => {
-        item.classList.add("typing");
+    Facebook.id = "Facebook";
+    Twitter.id = "Twitter";
+    Forgot.classList.add("Forgot");
+    form.forEach((element) => {
+        element.classList.add("typing");
     });
-
-    Facebook.innerHTML = "";
-    Twitter.innerHTML = "";
+    loginButtom.classList.add("login-buttom");
+    DescriptionForm.classList.add("Description","Form");
 }
 
 const contenedor = document.querySelector("#contenedor");
@@ -26,7 +23,7 @@ const logos = document.querySelector("#logos");
 const logo = logos.querySelectorAll("a");
 const Facebook = document.querySelector(".Facebook");
 const Twitter = document.querySelector(".Twitter");
-const typing = document.querySelectorAll("#typing");
+const form = document.querySelectorAll("#form input");
 const Forgot = document.querySelector("#Forgot");
 const loginButtom = document.querySelector("#login-buttom");
 const DescriptionForm = document.querySelector("#Description");
